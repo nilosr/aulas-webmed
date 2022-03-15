@@ -7,12 +7,19 @@
     "moduleResolution": "Node",
     "strict": true,
     "sourceMap": true,
-    "resolveJsonModule": true,
     "esModuleInterop": true,
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "rootDirs": ["src", "tests"],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/*"]
+    },
+    "allowJs": true,
+    "resolveJsonModule": true
   },
   "include": ["src"]
 }
